@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+section{
+    display:flex;
+}
+
+#sessao1{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-flow:row nowrap;
+    background-color:rgb(240, 240, 240);
+    border-radius:10px;
+    padding: 20px
+}
+
+#sessao1-1{
+    width: 30vw;
+    box-shadow: 10px 0px 10px rgb(236, 236, 236);
+    background-color:white;
+    border-radius:10px;
+    padding: 10px;
+}
+
+#sessao1-1 div{
+    width:100%;
+}
+
+#sessao1-1 li{
+    list-style:none;
+}
+
+#sessao1-2{
+    margin: 0px 0px 0px 10px;
+    border-radius:10px;
+    
+}
+
+#sessao1-2 #crc{
+    width:100%;
+    height: fit-content;
+    background-color:white;
+    border-radius:10px;
+    padding: 30px;
+}
+
+#sessao1-2 #retorno{
+    margin: 20px 0px 0px 0px ;
+}
+
+#sessao1-2 #crc {
+    display:flex;
+    flex-flow:column;
+}
+
+#sessao1-2 input{
+    margin: 0px 0px 20px 0px;
+}
+
+#sessao1-2 #btn-calcular{
+    width: 150px;
+    height: 30px;
+    background-color: green;
+    color:white;
+    border-radius:3px;
+}
