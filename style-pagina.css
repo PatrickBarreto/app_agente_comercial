@@ -4,34 +4,54 @@
     box-sizing: border-box;
 }
 
+.responsivo{
+    display: none;
+    position: fixed;
+    left: 10vw;
+    top: 5vh;
+}
+
+main{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column;
+    align-items:flex-end;
+    height: 100vh;
+}
+
 section{
     display:flex;
+    display: -webkit-flex;
 }
 
 #sessao1{
-    width: 100%;
-    height: 100vh;
-    display:flex;
+    width: 75%;
+    height: 97vh;
     flex-flow:row nowrap;
-    justify-content: space-around ;
+    justify-content: space-around;
     background-color:rgb(240, 240, 240);
     border-radius:10px;
-    padding: 20px
+    padding: 20px;
+    margin: 0 25px 0 0;
 }
-
-#sessao1-1{
-    width: 30vw;
+#sessao-opcoes{
+    z-index: 1;
+    width:250px;
+    height: 100%;
     box-shadow: 10px 0px 10px rgb(236, 236, 236);
     background-color:white;
     border-radius:10px;
     padding: 10px;
+    position: fixed;
+    left:0;
+    top:0;
 }
 
-#sessao1-1 div{
+#sessao-opcoes div{
     width:100%;
 }
 
-#sessao1-1 li{
+#sessao-opcoes li{
     list-style:none;
 }
 
@@ -64,13 +84,80 @@ section{
 }
 
 #sessao1-2 input{
-    margin: 0px 0px 20px 0px;
+    margin: 5px 0px 20px 0px;
+    height:25px;
+    border-radius: 10px;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 0px 3px 4px rgb(188, 188, 188);
 }
 
 #sessao1-2 #btn-calcular{
-    width: 150px;
+    width: 35vw;
+    max-width: 150px;
     height: 30px;
     background-color: green;
     color:white;
     border-radius:3px;
+}
+
+#interacao{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(11, 152, 11);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    border-radius: 10px;
+    padding: 15px
+}
+
+
+#suporte{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(11, 152, 11);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    border-radius: 10px;
+    margin-left:20px;
+    padding: 15px;
+}
+
+/*---------------RESPONSIVO------------*/
+@media (max-width:600px){
+    #sessao-opcoes{
+        display:none;
+        width: 50%;
+        padding: 70px 10px 10px 20px;
+        z-index: 2;
+    }
+    #fechar{
+        position: fixed;
+         left: 25vw;
+     }
+     #abrir{
+         z-index: 1;
+     }
+    
+    #sessao1{
+        width: 90%;
+    }
+
+    #sessao1-2{
+        width: 80%;
+        margin: 30px 0 0 0;
+    }
+
+    .responsivo{
+        display: block;
+    }
 }

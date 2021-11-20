@@ -7,45 +7,50 @@
     <title>Suporte Comercial</title>
 </head>
 <body>
-
+ 
 <main>
 
-    <section id="sessao1"> 
+    <section id="sessao-opcoes">
+        <button class="responsivo" id="fechar"> fechar opções </button>
+        <div>
+            <h1>
+                Suporte Comercial
+            </h1>
+        
+            <h2>
+                Tipo de ajuda
+            </h2>
+            <ul>
+                <li id="ajuda"> 
+                    <a href="#">
+                    CRC - Custo Real do Cliente
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        <section id="sessao1-1">
-            <div>
-                <h1>
-                    Suporte Comercial
-                </h1>
-            
-                <h2>
-                    Tipo de ajuda
-                </h2>
-                <ul>
-                    <li id="ajuda"> 
-                        <a href="#">
-                        CRC - Custo Real do Cliente
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+
+    <section id="sessao1"> 
+        <button class="responsivo" id="abrir"> abrir opções </button>
         
         <section id="sessao1-2">
 
             <div id="crc">
 
+                <h2> Percentual de Custo</h2>
+
                 <label>Valor da venda</label>
-                <input type="number" id="valor1">
+                <input type="number" id="valor1" placeholder="1450.90">
 
                 
                 <label>Valor recebido</label>
-                <input type="number" id="valor2">
+                <input type="number" id="valor2"placeholder="1350.90">
             
                 <p> ou </p>
 
                 <label>Valor descontado</label>
-                <input type="number" id="valor3">
+                <input type="number" id="valor3"placeholder="150">
 
                 <button id="btn-calcular"> calcular </button>
                 
@@ -56,6 +61,16 @@
 
         </section>
     </section>
+
+    <div id="contato">
+    <a id="interacao" href="https://api.whatsapp.com/send?phone=5522997360989" target="_blank">
+        Enviar sugestão de cálculo
+    </a>
+
+    <a id="suporte" href="https://api.whatsapp.com/send?phone=5522997360989" target="_blank">
+        pedir ajuda
+    </a>
+</div>
     
 </main>
     
