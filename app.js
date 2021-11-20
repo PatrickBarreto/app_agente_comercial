@@ -20,11 +20,11 @@ const opcoes = document.querySelector("#sessao-opcoes")
     if (valor_recebido > 0 && valor_descontado <= 0 ){
         resto = valor_venda - valor_recebido;
         resultado = (resto / valor_venda) * 100;
-        retorno.innerHTML= `A taxa real é de ${resultado} %`;
+        retorno.innerHTML= `A taxa real é de ${resultado.toFixed(2)} %`;
     }
     else if (valor_descontado > 0 && valor_recebido <= 0){
         resultado = (valor_descontado / valor_venda) * 100;
-        retorno.innerHTML= `A taxa real é de ${resultado} %`;
+        retorno.innerHTML= `A taxa real é de ${resultado.toFixed(2)} %`;
     }
     else{
         retorno.innerHTML = `Aplique 0 a um dos dois últimos valores`
